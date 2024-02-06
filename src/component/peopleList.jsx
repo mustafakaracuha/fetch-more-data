@@ -7,7 +7,7 @@ function PeopleList({ data }) {
         <>
           {data.map((item) => (
             <div
-              className="w-full h-14 mb-4 flex items-center pl-4 rounded-xl justify-start bg-slate-50 transition-all duration-300 hover:cursor-pointer hover:bg-slate-200"
+              className="w-full h-14 mb-4 flex items-center pl-4 rounded-xl justify-start bg-slate-50 transition-all duration-300 hover:cursor-pointer hover:bg-blue-50"
               key={item.id}
             >
               <p>{item.name}</p>
