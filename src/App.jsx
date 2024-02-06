@@ -19,13 +19,14 @@ function App() {
     fetchData();
   }, []);
 
-  const endPoint = `https://swapi.dev/api/people/?page=${page}`;
+  const endPoint = `https://randomuser.me/api/?page=${page}&results=12`;
 
   const fetchData = async () => {
     setSpinnerIsVisible(true);
     try {
       const response = await axios.get(endPoint);
       const { results } = response.data;
+      console.log(results);
 
       if (response.status === 200) {
         setPage(page + 1);
@@ -34,7 +35,6 @@ function App() {
 
       setTimeout(() => {
         if (contentRef.current) {
-          console.log(contentRef);
           contentRef.current.scrollTo({
             top: contentRef.current.scrollHeight,
             behavior: "smooth",
@@ -42,7 +42,6 @@ function App() {
         }
       }, 300);
     } catch (e) {
-      console.log(e);
       setIsDataEnd(true);
     }
     setSpinnerIsVisible(false);
@@ -51,10 +50,10 @@ function App() {
   return (
     <div className="w-full h-screen bg-slate-100 overflow-auto">
       <div className="max-w-md h-[49rem] mt-10 mx-auto pt-12 px-10 pb-2 rounded-[20px] bg-white shadow-xl shadow-slate-300 overflow-auto">
-        <h1 className="font-black text-xl bg-white mb-5 flex items-center justify-between">
+        <h1 className="font-semibold text-2xl bg-white mb-5 flex items-center justify-between">
           {data.length > 0 && (
             <>
-              <p>Fetch more data one click</p>
+              <p>Random User</p>
               <span className="text-[1.2rem] text-slate-400 font-semibold">
                 {data.length}
               </span>
@@ -91,11 +90,11 @@ function App() {
           )
         ) : (
           <Button
-          disabled
-          className="!w-full !bg-red-100 !text-red-600 !mt-6 !mb-10 !rounded-[10px] !p-3 !capitalize"
-        >
-         No More Data
-        </Button>
+            disabled
+            className="!w-full !bg-red-100 !text-red-600 !mt-6 !mb-10 !rounded-[10px] !p-3 !capitalize"
+          >
+            No More Data
+          </Button>
         )}
       </div>
     </div>
