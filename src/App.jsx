@@ -52,9 +52,13 @@ function App() {
     <div className="w-full h-screen bg-slate-100 overflow-auto">
       <div className="max-w-md h-[49rem] mt-10 mx-auto pt-12 px-10 rounded-[20px] bg-white shadow-xl shadow-slate-300 overflow-auto">
         <h1 className="font-black text-xl bg-white mb-6 flex items-center justify-between">
-          Fetch more data one click{" "}
           {data.length > 0 && (
-            <span className="text-[1.2rem] text-slate-400 font-semibold">{data.length}</span>
+            <>
+              <p>Fetch more data one click</p>
+              <span className="text-[1.2rem] text-slate-400 font-semibold">
+                {data.length}
+              </span>
+            </>
           )}
         </h1>
         <div ref={contentRef} className="w-full h-[35rem] overflow-auto">
