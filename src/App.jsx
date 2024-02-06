@@ -73,7 +73,7 @@ function App() {
         {spinnerIsVisible && data.length > 0 && (
           <Button
             disabled
-            className="!bg-blue-100 !w-full !text-blue-700 !mt-6 !mb-10 !rounded-[10px] !p-3"
+            className="!bg-blue-100 !w-full !text-blue-700 !mt-6 !mb-10 !rounded-[10px] !p-3 !capitalize"
             endIcon={<CgSpinner size={20} className="animate-spin" />}
           >
             Loading
@@ -83,16 +83,19 @@ function App() {
           !spinnerIsVisible && (
             <Button
               onClick={fetchData}
-              className="!w-full !bg-yellow-100 !text-yellow-800 !mt-6 !mb-10 !rounded-[10px] !p-3"
+              className="!w-full !bg-yellow-100 !text-yellow-700 !mt-6 !mb-10 !rounded-[10px] !p-3 !capitalize"
               endIcon={<FiPlusCircle size={20} />}
             >
               Load More
             </Button>
           )
         ) : (
-          <p className="text-center flex items-center justify-center text-red-600 h-14 rounded-xl mt-10 mb-10 bg-red-50">
-            No More Data
-          </p>
+          <Button
+          disabled
+          className="!w-full !bg-red-50 !text-red-700 !mt-6 !mb-10 !rounded-[10px] !p-3 !capitalize"
+        >
+         No More Data
+        </Button>
         )}
       </div>
     </div>
