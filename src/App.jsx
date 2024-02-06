@@ -50,8 +50,8 @@ function App() {
 
   return (
     <div className="w-full h-screen bg-slate-100 overflow-auto">
-      <div className="max-w-md h-[49rem] mt-10 mx-auto pt-12 px-10 rounded-[20px] bg-white shadow-xl shadow-slate-300 overflow-auto">
-        <h1 className="font-black text-xl bg-white mb-6 flex items-center justify-between">
+      <div className="max-w-md h-[49rem] mt-10 mx-auto pt-12 px-10 pb-2 rounded-[20px] bg-white shadow-xl shadow-slate-300 overflow-auto">
+        <h1 className="font-black text-xl bg-white mb-5 flex items-center justify-between">
           {data.length > 0 && (
             <>
               <p>Fetch more data one click</p>
@@ -92,7 +92,7 @@ function App() {
         ) : (
           <Button
           disabled
-          className="!w-full !bg-red-50 !text-red-700 !mt-6 !mb-10 !rounded-[10px] !p-3 !capitalize"
+          className="!w-full !bg-red-100 !text-red-600 !mt-6 !mb-10 !rounded-[10px] !p-3 !capitalize"
         >
          No More Data
         </Button>
