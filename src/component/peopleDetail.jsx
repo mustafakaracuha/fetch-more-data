@@ -27,6 +27,7 @@ function PeopleDetail({ selectedPeople, open, id, anchorEl, handleClose }) {
           <Avatar
             sx={{ width: 70, height: 70 }}
             alt={selectedPeople?.name.first + " " + selectedPeople?.name.last}
+            title={selectedPeople?.name.first + " " + selectedPeople?.name.last}
             src={selectedPeople?.picture.large}
           />
           <div className="w-full flex flex-col items-start justify-between">
@@ -48,6 +49,7 @@ function PeopleDetail({ selectedPeople, open, id, anchorEl, handleClose }) {
               }
               className="!bg-green-200 transition-all duration-300 !pl-2 group/item !text-green-700 !cursor-pointer"
               label={"Call"}
+              title={selectedPeople?.phone}
               icon={
                 <FaPhoneAlt
                   size={15}

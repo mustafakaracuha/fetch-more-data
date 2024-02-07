@@ -31,6 +31,7 @@ function PeopleList({ data }) {
             >
               <Avatar
                 sx={{ width: 42, height: 42 }}
+                title={item.name.first + " " + item.name.last}
                 alt={item.name.first + " " + item.name.last}
                 src={item.picture.large}
               />
