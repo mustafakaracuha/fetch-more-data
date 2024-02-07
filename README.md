@@ -3,6 +3,7 @@
 <p align="center">
   <img src="https://github.com/mustafakaracuha/fetch-more-data/blob/main/src/assets/app2.png" alt="Home" width="380" />
   <img src="https://github.com/mustafakaracuha/fetch-more-data/blob/main/src/assets/app1s.png" alt="Detail" width="377" />
+  <img src="https://github.com/mustafakaracuha/fetch-more-data/blob/main/src/assets/app3.png" alt="Detail" width="377" />
 </p>
 
 
