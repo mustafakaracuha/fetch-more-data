@@ -4,6 +4,12 @@ import Avatar from "@mui/material/Avatar";
 import Popover from "@mui/material/Popover";
 import Chip from "@mui/material/Chip";
 
+import { FaPhoneAlt } from "react-icons/fa";
+
+
+
+
+
 function PeopleDetail({ selectedPeople, open, id, anchorEl, handleClose }) {
   return (
     <Popover
@@ -20,7 +26,7 @@ function PeopleDetail({ selectedPeople, open, id, anchorEl, handleClose }) {
       }}
       onClose={handleClose}
     >
-      <div className="w-[35rem] flex h-[20rem] p-12">
+      <div className="w-[35rem] flex h-[10.5rem] p-12">
         <div className="w-full flex items-start justify-between">
           <Avatar
             sx={{ width: 70, height: 70 }}
@@ -37,7 +43,19 @@ function PeopleDetail({ selectedPeople, open, id, anchorEl, handleClose }) {
               {selectedPeople?.email}
             </p>
           </div>
-          <Chip className="!bg-blue-500 !text-white" label={"Age" + " " + selectedPeople?.dob.age} />
+          <div className="flex flex-col">
+          <Chip
+            className="!bg-indigo-400 !text-white mb-3 -mt-1"
+            label={"Age" + " " + selectedPeople?.dob.age}
+          />
+          <Chip
+            onClick={() => window.location.href = `tel:${selectedPeople?.phone}`}
+            className="!bg-green-200 transition-all duration-300 !pl-2 group/item !text-green-700 !cursor-pointer"
+            label={"Call"}
+            icon={<FaPhoneAlt size={15} className="!text-green-700 transition-all duration-300 group-hover/item:rotate-12"/>}
+          />
+          </div>
+         
         </div>
       </div>
     </Popover>
