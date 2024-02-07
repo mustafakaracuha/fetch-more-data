@@ -1,7 +1,7 @@
 # Fetch more data one click
 
 <p align="start">
-  <img src="https://github.com/mustafakaracuha/fetch-more-data/blob/main/src/assets/app4.png" alt="Detail" width="500" />
+  <img src="https://github.com/mustafakaracuha/fetch-more-data/blob/main/src/assets/app4.png" alt="Detail" width="600" />
 </p>
 
 
