@@ -20,7 +20,7 @@ function PeopleList({ data }) {
   const id = open ? "simple-popover" : undefined;
 
   return (
-    <React.Fragment>
+    <>
       {data.length > 0 && (
         <>
           {data.map((item) => (
@@ -52,7 +52,7 @@ function PeopleList({ data }) {
           />
         </>
       )}
-    </React.Fragment>
+    </>
   );
 }
 
