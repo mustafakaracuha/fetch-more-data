@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://github.com/mustafakaracuha/fetch-more-data/blob/main/src/assets/app1s.png" alt="Detail" width="377" />
-  <img src="https://github.com/mustafakaracuha/fetch-more-data/blob/main/src/assets/app3.png" alt="Detail" width="450" />
+  <img src="https://github.com/mustafakaracuha/fetch-more-data/blob/main/src/assets/app3.png" alt="Detail" width="430" />
 </p>
 
 
