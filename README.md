@@ -21,5 +21,3 @@ npm start
 yarn start
 
 # 4. Open the application in your browser by navigating to http://localhost:5173.
-
-**Live Demo:** [Fetch More Data Demo](https://fetch-more-data.vercel.app)
