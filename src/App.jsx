@@ -26,7 +26,6 @@ function App() {
     try {
       const response = await axios.get(endPoint);
       const { results } = response.data;
-      console.log(results);
 
       if (response.status === 200) {
         setPage(page + 1);
@@ -41,6 +40,7 @@ function App() {
           });
         }
       }, 300);
+      
     } catch (e) {
       setIsDataEnd(true);
     }
