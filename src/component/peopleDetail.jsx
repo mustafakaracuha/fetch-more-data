@@ -22,7 +22,7 @@ function PeopleDetail({ selectedPeople, open, id, anchorEl, handleClose }) {
       }}
       onClose={handleClose}
     >
-      <div className="w-[35rem] flex h-[10.5rem] p-12">
+      <div className="w-[35rem] max-sm:w-[30rem] max-md:w-[30rem] flex h-[10.5rem] p-12">
         <div className="w-full flex items-start justify-between">
           <Avatar
             sx={{ width: 70, height: 70 }}
